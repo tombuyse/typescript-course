@@ -1,3 +1,7 @@
+/**
+ * compile to javascript with 'tsc person.ts'
+ */
+
 enum Gender {
     M,
     F
