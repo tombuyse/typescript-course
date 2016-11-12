@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "commonjs"
+  },
+  "files": [
+    "src/app.ts",
+    "./typings/es6-promise/es6-promise.d.ts"
+  ]
+}
