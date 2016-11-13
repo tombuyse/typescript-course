@@ -16,7 +16,11 @@ const carsToProduce = [
 ];
 
 carsToProduce.forEach(car => {
-    factoryService.produce(car).then(producedCar => {
-       deliveryService.deliverCar(producedCar);
-    });
+    factoryService.produce(car)
+        .then(producedCar => {
+            deliveryService.deliverCar(producedCar);
+        })
+        .catch(() => {
+            deliveryService.reportFailure();
+        });
 });
